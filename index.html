@@ -26,6 +26,7 @@
       box-sizing: border-box;
     }
 
+    /* Professional spacing and typography */
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
@@ -33,6 +34,28 @@
       color: var(--text-primary);
       line-height: 1.6;
       overflow-x: hidden;
+      letter-spacing: 0.3px;
+    }
+
+    /* Enhanced professional styling */
+    .professional-text {
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+
+    /* Better email styling */
+    .email-link {
+      color: var(--accent-color);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 12px 25px;
+      border: 2px solid var(--accent-color);
+      border-radius: 30px;
+      display: inline-block;
+      margin: 10px;
+      transition: all 0.3s ease;
+      background: var(--glass-bg);
+      backdrop-filter: blur(10px);
     }
 
     body::before {
@@ -103,6 +126,11 @@
       margin-bottom: 20px;
       text-shadow: 0 0 30px rgba(102, 126, 234, 0.5);
       animation: glow 2s ease-in-out infinite alternate;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
     }
 
     @keyframes glow {
@@ -228,6 +256,7 @@
       width: 100%;
       height: 100%;
       border: none;
+      border-radius: 15px;
     }
 
     /* Download Links */
@@ -431,15 +460,19 @@
 
   <header>
     <div class="header-content">
-      <h1>🎮 MrGamingX & MaroGamerYT 🎮</h1>
+      <h1>
+        <span>🎮</span>
+        <span>MrGamingX & MaroGamerYT</span>
+        <span>🎮</span>
+      </h1>
       <nav>
-        <a href="#video"><i class="fas fa-video"></i> فيديو جديد</a>
-        <a href="#downloads"><i class="fas fa-download"></i> تحميل ألعاب</a>
-        <a href="#gamejolt"><i class="fas fa-gamepad"></i> GameJolt</a>
-        <a href="#about"><i class="fas fa-users"></i> من نحن</a>
-        <a href="#upload"><i class="fas fa-upload"></i> ارفع لعبتك</a>
-        <a href="#contact"><i class="fas fa-envelope"></i> تواصل معنا</a>
-        <a href="https://mrgamingx.github.io/Videos/" target="_blank"><i class="fas fa-film"></i> فيديوهات</a>
+        <a href="#video">🎥 فيديو جديد</a>
+        <a href="#downloads">📥 تحميل ألعاب</a>
+        <a href="#gamejolt">⚡ GameJolt</a>
+        <a href="#about">👥 من نحن</a>
+        <a href="#upload">📤 ارفع لعبتك</a>
+        <a href="#contact">📧 تواصل معنا</a>
+        <a href="https://mrgamingx.github.io/Videos/" target="_blank">🎬 فيديوهات</a>
       </nav>
     </div>
   </header>
@@ -449,10 +482,18 @@
       <h2>🎬 آخر فيديو</h2>
       <div class="video-container">
         <div class="video-wrapper">
-          <iframe src="https://www.youtube.com/embed/tqBbuaiOuBI" allowfullscreen></iframe>
+          <iframe 
+            src="https://www.youtube.com/embed/tqBbuaiOuBI?rel=0&modestbranding=1" 
+            allowfullscreen
+            title="Gaming Video 1">
+          </iframe>
         </div>
         <div class="video-wrapper">
-          <iframe src="https://www.youtube.com/embed/bw4HIcKt9yk" allowfullscreen></iframe>
+          <iframe 
+            src="https://www.youtube.com/embed/bw4HIcKt9yk?rel=0&modestbranding=1" 
+            allowfullscreen
+            title="Gaming Video 2">
+          </iframe>
         </div>
       </div>
     </section>
@@ -507,15 +548,15 @@
     </section>
 
     <section class="gamejolt fade-in" id="gamejolt">
-      <h2>🕹️ حسابات GameJolt</h2>
+      <h2>⚡ حسابات GameJolt</h2>
       <div class="link-card">
         <a href="https://gamejolt.com/@-MonSun-SS" target="_blank">
-          <i class="fas fa-gamepad"></i> MaroGamerYT على GameJolt
+          ⚡ MaroGamerYT على GameJolt
         </a>
       </div>
       <div class="link-card">
         <a href="https://gamejolt.com/@MrGamingX" target="_blank">
-          <i class="fas fa-gamepad"></i> MrGamingX على GameJolt
+          ⚡ MrGamingX على GameJolt
         </a>
       </div>
     </section>
@@ -528,10 +569,10 @@
       </p>
       <div class="channel-links">
         <a href="https://www.youtube.com/@MrGamingX20321_MC-GD-RG" target="_blank" class="channel-link">
-          <i class="fab fa-youtube"></i> قناة Mr. Gaming-X
+          📺 قناة Mr. Gaming-X
         </a>
         <a href="https://www.youtube.com/@chahine-w2u" target="_blank" class="channel-link">
-          <i class="fab fa-youtube"></i> قناة MaroGamerYT
+          📺 قناة MaroGamerYT
         </a>
       </div>
     </section>
@@ -540,18 +581,25 @@
       <h2>📤 ارفع لعبتك</h2>
       <div class="link-card">
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSc5_C9JXRmzR_SX9nYrI2foqycXlrXdEd5XRTrkdUfKoWK68w/viewform?usp=sf_link" target="_blank">
-          <i class="fas fa-upload"></i> اضغط هنا لرفع لعبتك عبر Google Form
+          📤 اضغط هنا لرفع لعبتك عبر Google Form
         </a>
       </div>
     </section>
 
     <section class="contact fade-in" id="contact">
-      <h2>📩 تواصل معنا</h2>
+      <h2>📧 تواصل معنا</h2>
       <div class="contact-info">
         <p>للتواصل التجاري أو التعاون، راسلنا عبر:</p>
-        <a href="mailto:ahmedrez11111@gmail.com" class="email-link">
-          <i class="fas fa-envelope"></i> ahmedrez11111@gmail.com
-        </a>
+        <div style="margin: 20px 0;">
+          <a href="mailto:ahmedrez11111@gmail.com" class="email-link">
+            📧 ahmedrez11111@gmail.com
+          </a>
+        </div>
+        <div style="margin: 20px 0;">
+          <a href="mailto:gamerchahine1998@gmail.com" class="email-link">
+            📧 gamerchahine1998@gmail.com
+          </a>
+        </div>
       </div>
     </section>
   </div>
